@@ -12,7 +12,7 @@ databasePassword=sys.argv[2]
 dbName=sys.argv[3]
 
 #where the XML will be saved to, make sure it points to the htdocs folder
-filePath="/var/www/output.xml"
+filePath="/home/lighttpd/raspberryweather.com/http/output.xml"
 
 db = MySQLdb.connect("localhost",databaseUsername,databasePassword,dbName)
 todayDate=datetime.datetime.now()
